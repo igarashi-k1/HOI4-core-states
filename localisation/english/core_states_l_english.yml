@@ -1,0 +1,5 @@
+﻿l_english:
+ core_states_category:0 "中核州化"
+ core_states_category_desc:0 "支配しているステートを中核州にします。"
+ core_all_controlled_states:0 "支配ステートをすべて中核州にする"
+ core_all_controlled_states_desc:0 "保有・支配しているステートのうち、まだ中核州でないものをすべて中核州にします。"

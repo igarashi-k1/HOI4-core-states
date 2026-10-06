@@ -1,0 +1,8 @@
+core_states_category = {
+	icon = generic_political_discourse
+	priority = 100
+
+	allowed = {
+		always = yes
+	}
+}

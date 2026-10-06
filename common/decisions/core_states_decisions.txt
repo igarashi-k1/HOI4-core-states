@@ -1,0 +1,36 @@
+core_states_category = {
+
+	# 保有または支配しているステートのうち、まだ中核州でないものをすべて中核州にする
+	core_all_controlled_states = {
+		icon = generic_political_discourse
+		cost = 0
+		fire_only_once = no
+
+		available = {
+			any_state = {
+				OR = {
+					is_owned_by = ROOT
+					is_controlled_by = ROOT
+				}
+				NOT = { is_core_of = ROOT }
+			}
+		}
+
+		complete_effect = {
+			every_state = {
+				limit = {
+					OR = {
+						is_owned_by = ROOT
+						is_controlled_by = ROOT
+					}
+					NOT = { is_core_of = ROOT }
+				}
+				add_core_of = ROOT
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
